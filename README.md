@@ -11,5 +11,5 @@ UI/UX創新應用暨社群經營網站開發與實戰班
 ### [08 CSS 網頁切版術 - float 排版](https://docs.google.com/presentation/d/1K2791FHGLZXd2gbDKJCDANX0KltR4ZTm0yHS3lu5Q1I/edit?usp=sharing)
 ### [09 CSS 網頁切版術 - position 排版](https://docs.google.com/presentation/d/1y4eGj7x37aA-QePayDt5FnvkcWu3z_uMv2KAybVFGXU/edit?usp=sharing)
 ### [10 CSS 網頁切版術 - 常用技巧整理](https://docs.google.com/presentation/d/1Ylnq5hUXvmQTGg8VttfwoZLx0SZzcPUm1dBdJuMyMWg/edit?usp=sharing)
-### [11 了解版本控管](https://docs.google.com/presentation/d/1Ylnq5hUXvmQTGg8VttfwoZLx0SZzcPUm1dBdJuMyMWg/edit?usp=sharing)
+### [11 了解版本控管](https://docs.google.com/presentation/d/1ZsHeq90WHfhKPU7UQtRuEHJ5Ki2OasdN_sQsnH2ksW8/edit?usp=sharing)
 
