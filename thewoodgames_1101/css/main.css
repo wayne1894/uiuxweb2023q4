@@ -11,3 +11,26 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 980px;
+    margin: 0 auto;
+    /* background-color: brown; */
+}
+.main>header{
+    text-align: center;
+    /* padding-top: 40px;
+    padding-bottom: 20px; */
+}
+.main>header>img.logo{
+    width: 150px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
