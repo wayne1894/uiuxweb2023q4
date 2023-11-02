@@ -54,9 +54,34 @@ ul {
     text-decoration: none;
     color: #000;
     display: block;
+    position: relative;
+    width: 100%;
 }
+.main>nav>ul>li>.nav_item>.nav_child{
+    /* background-color: red; */
+    display: none;
+    position: absolute;
+}
+.main>nav>ul>li>.nav_item>.nav_child a{
+    background-color: #898000;
+    text-decoration: none;
+    color: #fff;
+    line-height: 20px;
+    font-size: 16px;
+    display: block;
+    padding: 10px 20px;
+    text-align: left;
+}
+.main>nav>ul>li>.nav_item>.nav_child a:hover{
+    background-color: #000;
+}
+
 .main>nav>ul>li>.nav_item:hover{
     background-color: #DCDDDD;
+}
+
+.main>nav>ul>li>.nav_item:hover .nav_child{
+    display: block;
 }
 
 .main>.content img{
