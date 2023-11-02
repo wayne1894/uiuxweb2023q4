@@ -96,3 +96,9 @@ ul {
     color: #898000;
 }
 
+
+@media(max-width:992px){
+    .main>nav>ul>li{
+        width: 100%;
+    }
+}
