@@ -17,9 +17,8 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 .main{
-    width: 980px;
+    width: 880px;
     margin: 0 auto;
     /* background-color: brown; */
 }
@@ -30,6 +29,8 @@ ul {
 }
 .main>header>img.logo{
     width: 150px;
+    /* display: block;
+    margin: 0 auto; */
     margin-top: 40px;
     margin-bottom: 20px;
 }
@@ -42,13 +43,26 @@ ul {
 .main>nav>ul>li{
     /* background-color: red; */
     display: inline-block;
-    width: 33%;
+    width: 32%;
     height: 70px;
     line-height: 70px;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
 }
+.main>nav>ul>li>.nav_item{
+    text-decoration: none;
+    color: #000;
+    display: block;
+}
+.main>nav>ul>li>.nav_item:hover{
+    background-color: #DCDDDD;
+}
+
+.main>.content img{
+    width: 100%;
+}
+
 .en_text{
     color: #898000;
 }
