@@ -42,11 +42,24 @@ ul {
     margin-bottom: 20px;
     /* background-color: red; */
 }
+.main>nav>ul{
+    display: flex;
+}
 .main>nav>ul>li{
     /* background-color: red; */
-    display: inline-block;
+
+    /* 
+    這是 display inline-block 的排版方式 
+    */
+    /* display: inline-block;
     width: 33.333333%;
-    margin-right: -4px;
+    margin-right: -4px; */
+
+    /* 
+    這是 display flex 的排版方式 
+    */
+    flex:1;
+
     height: 70px;
     line-height: 70px;
     text-align: center;
@@ -98,6 +111,9 @@ ul {
 
 
 @media(max-width:992px){
+    .main>nav>ul{
+        flex-direction: column;
+    }
     .main>nav>ul>li{
         width: 100%;
     }
