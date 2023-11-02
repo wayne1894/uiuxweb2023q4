@@ -18,8 +18,10 @@ ul {
     padding: 0;
 }
 .main{
-    width: 880px;
+    width: 100%;
+    max-width: 950px;
     margin: 0 auto;
+    padding: 0 15px;
     /* background-color: brown; */
 }
 .main>header{
@@ -43,7 +45,8 @@ ul {
 .main>nav>ul>li{
     /* background-color: red; */
     display: inline-block;
-    width: 32%;
+    width: 33.333333%;
+    margin-right: -4px;
     height: 70px;
     line-height: 70px;
     text-align: center;
@@ -61,6 +64,7 @@ ul {
     /* background-color: red; */
     display: none;
     position: absolute;
+    width: 100%;
 }
 .main>nav>ul>li>.nav_item>.nav_child a{
     background-color: #898000;
