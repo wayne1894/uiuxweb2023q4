@@ -110,6 +110,72 @@ ul {
 }
 
 
+/* shop.html 的 css */
+.shop_content>.p_content{
+    color: #58595B;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.shop_content>.item_wrap{
+    border: 1px solid #898000;
+    font-weight: bold;
+}
+.shop_content>.item_wrap>.item_row{
+    display: flex;
+    padding: 15px;
+}
+.shop_content>.item_wrap>.item_row>div{
+    flex: 1;
+}
+.shop_content>.item_wrap>.item_row>.item_right .item_title{
+    border-bottom: 1px solid #898000;
+    padding-bottom: 3px;
+}
+.shop_content>.item_wrap>.item_row>.item_right .item_child{
+    display: flex;
+    margin-top: 10px;
+}
+.price_txt{
+    color: #898000;
+    font-size: 17px;
+    margin-bottom: 13px;
+}
+.game_txt{
+    line-height: 19px;
+    font-size: 15px;
+}
+.buy_btn{
+    margin-left: 30px;
+
+    text-decoration: none;
+    background: #827B00;
+    color: #fff;
+    padding: 7px;
+    display: block;
+    border-radius: 14px;
+}
+/* .buy_btn{
+    margin-left: 30px;
+    width: 82px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #8A8000;
+    border-radius: 14px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+} */
+
+
+.buy_btn:hover{
+    background: #000;
+}
+
+
 @media(max-width:992px){
     .main>nav>ul{
         flex-direction: column;
