@@ -125,10 +125,47 @@ ul {
 .shop_content>.item_wrap>.item_row{
     display: flex;
     padding: 15px;
+    gap: 15px;
 }
-.shop_content>.item_wrap>.item_row>div{
+/* .shop_content>.item_wrap>.item_row>div{
     flex: 1;
+} */
+.shop_content>.item_wrap>.item_row>.item_left{
+    /* width: 20%; */
+    flex-basis: 20%;
 }
+.product_img{
+    width: 100%;
+}
+.shop_content>.item_wrap>.item_row>.item_mid{
+    /* width: 40%; */
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: space-between; */
+
+    /* position: relative; */
+}
+.price{
+    /* 
+    position: absolute;
+    bottom: 0; 
+    */
+    color: #898000;
+}
+.item_mid > h2{
+    margin: 0;
+    font-size: 22px;
+    line-height: 25px;
+
+    margin-bottom: auto;
+}
+.shop_content>.item_wrap>.item_row>.item_right{
+    /* width: 40%; */
+    flex-basis: 40%;
+}
+
 .shop_content>.item_wrap>.item_row>.item_right .item_title{
     border-bottom: 1px solid #898000;
     padding-bottom: 3px;
@@ -137,27 +174,29 @@ ul {
     display: flex;
     margin-top: 10px;
 }
+.item_child>.item_child_left{
+    margin-right: auto;
+}
+.item_child>.item_child_right{
+    padding-top: 5px;
+}
 .price_txt{
     color: #898000;
     font-size: 17px;
-    margin-bottom: 13px;
+    margin-bottom: 8px;
 }
 .game_txt{
     line-height: 19px;
     font-size: 15px;
 }
 .buy_btn{
-    margin-left: 30px;
-
     text-decoration: none;
     background: #827B00;
     color: #fff;
     padding: 7px;
-    display: block;
     border-radius: 14px;
 }
 /* .buy_btn{
-    margin-left: 30px;
     width: 82px;
     height: 32px;
     line-height: 32px;
@@ -183,4 +222,16 @@ ul {
     .main>nav>ul>li{
         width: 100%;
     }
+    .shop_content>.item_wrap>.item_row{
+        flex-direction: column;
+    }
+    /* .shop_content>.item_wrap>.item_row>.item_left{
+        width: 100%;
+    }
+    .shop_content>.item_wrap>.item_row>.item_mid{
+        width: 100%;
+    }
+    .shop_content>.item_wrap>.item_row>.item_right{
+        width: 100%;
+    } */
 }
