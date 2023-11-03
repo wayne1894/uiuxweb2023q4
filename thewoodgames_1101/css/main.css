@@ -254,7 +254,7 @@ footer >.main>div{
 } */
 
 /* flex 解決方案3 */
-/* footer >.main {
+footer >.main {
     display: flex;
     height: 120px;
     padding-top: 20px;
@@ -262,10 +262,20 @@ footer >.main>div{
 footer >.main>ul{
     display: flex;
     margin-right: auto;
-} */
+    gap: 15px;
+}
+footer >.main>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 3px;
+}
+footer >.main>ul>li>a:hover{
+    border-bottom: 2px solid #fff;
+    /* text-decoration: underline */
+}
 
 /* float 解決方案4 */
-footer >.main{
+/* footer >.main{
     height: 120px;
 }
 footer >.main>ul{
@@ -273,7 +283,7 @@ footer >.main>ul{
 }
 footer >.main>div{
     float: right;
-}
+} */
 
 
 @media(max-width:992px){
