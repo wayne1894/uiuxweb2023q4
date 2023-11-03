@@ -72,6 +72,7 @@ ul {
     display: block;
     position: relative;
     width: 100%;
+    z-index: 5;
 }
 .main>nav>ul>li>.nav_item>.nav_child{
     /* background-color: red; */
