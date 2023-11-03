@@ -126,6 +126,10 @@ ul {
     display: flex;
     padding: 15px;
     gap: 15px;
+    border-bottom: 1px solid #898000;
+}
+.shop_content>.item_wrap>.item_row:last-child{
+    border-bottom: none;
 }
 /* .shop_content>.item_wrap>.item_row>div{
     flex: 1;
@@ -212,6 +216,63 @@ ul {
 
 .buy_btn:hover{
     background: #000;
+}
+
+
+footer{
+    background-color: #827B00;
+    margin-top: 50px;
+}
+
+/* flex 解決方案1 */
+
+/* footer >.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+} */
+
+/* footer >.main>ul{
+    display: flex;
+} */
+
+/* flex 解決方案2 */
+/* footer >.main {
+    display: flex;
+    height: 120px;
+    padding-top: 20px;
+}
+
+footer >.main>ul{
+    flex: 1;
+    display: flex;
+}
+footer >.main>div{
+    flex: 1;
+    text-align: right;
+} */
+
+/* flex 解決方案3 */
+/* footer >.main {
+    display: flex;
+    height: 120px;
+    padding-top: 20px;
+}
+footer >.main>ul{
+    display: flex;
+    margin-right: auto;
+} */
+
+/* float 解決方案4 */
+footer >.main{
+    height: 120px;
+}
+footer >.main>ul{
+    float: left;
+}
+footer >.main>div{
+    float: right;
 }
 
 
