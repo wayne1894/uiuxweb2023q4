@@ -3,9 +3,6 @@ import {ViteEjsPlugin} from "vite-plugin-ejs";
 
 export default defineConfig({
   plugins: [
-
-
-    // Or With Vite Config
     ViteEjsPlugin((viteConfig) => {
       // viteConfig is the current viteResolved config.
       return {
@@ -19,7 +16,8 @@ export default defineConfig({
     open: "/index.html",
   },
   build: {
-    outDir: "../dist",
+    outDir: "./dist",
   },
-  root: "src",
+  base: "./",
+  //root: "src" //如果檔案太多，可將網站檔案包在src資料夾裡面
 });
