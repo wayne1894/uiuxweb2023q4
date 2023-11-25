@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>來一課 最懂你的線上課程開課工具 - 藍猴數位探索BlueMonkey</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="scss/main.scss">
+</head>
+<body>
+    <%-include('include/header')%>
+
+    <main class="pt-[70px]">
+        <section class="bg-[#1b96e1] w-full">
+            <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center">
+                <img src="img/3bm-fb-share.jpg" alt="">
+                <a href="#" class="plan_btn mt-5 mb-5">查看方案</a>
+            </div>
+        </section>
+        <section class="bg-[#f6f8fd] w-full">
+            <div class="max-w-[1300px] px-2 mx-auto text-center">
+                <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-0 py-8 md:py-10">
+                    <div class="flex-1">
+                        <p class="flex items-center justify-center text-[32px] md:text-[40px] text-[#1b96e0] font-bold gap-[5px]">3,988 <b class="text-[18px]">堂</b></p>
+                        <span class="text-[18px] text-black">開課數量</span>
+                    </div>
+                    <div class="flex-1">
+                        <p class="flex items-center justify-center text-[32px] md:text-[40px] text-[#1b96e0] font-bold gap-[5px]">15,822<b class="text-[18px]">人</b></p>
+                        <span class="text-[18px] text-black">學生總數</span>
+                    </div>
+                    <div class="flex-1">
+                        <p class="flex items-center justify-center text-[32px] md:text-[40px] text-[#1b96e0] font-bold gap-[5px]">17,659<b class="text-[18px]">萬</b></p>
+                        <span class="text-[18px] text-black">創造總營收</span>
+                    </div>
+                 </div>
+                 <!-- <div class="flex flex-wrap"></div>  //flex解決方案 -->
+                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <%for(var i=0;i<6;i++){%>
+                        <%- include('include/introduce', {
+                            h3: "個性化介面",
+                            img: "img/spec-img1.png",
+                            li: ['首頁<b>版型切換</b> <span class="hidden md:inline">(七大區塊皆可換)</span>','自訂品牌Logo','開放CSS編輯','增加自訂頁面','部落格文章系統']
+                        }); %>
+                    <%}%>
+                 </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
