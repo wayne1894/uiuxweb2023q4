@@ -15,7 +15,7 @@ body{
 }
 #header{
   box-shadow: 0 3px 5px rgb(236 236 236 / 50%);
-  border-bottom: 1px solid #cbd0d9;
+  // border-bottom: 1px solid #cbd0d9;
   z-index: 2;
   position: fixed;
   .logo_text{
@@ -32,11 +32,11 @@ body{
   a:hover .logo_text{
     animation: hover-shine 1.5s cubic-bezier(0, 0.58, 1, 0.44) infinite;
   }
-  nav>ul>li>a{
+  ul>li>a{
     color: rgba(0, 0, 0, 0.9);
     font-weight: bold;
   }
-  nav>ul>li:hover a{
+  ul>li:hover a{
     color: #007cc1;
   }
   .header_btn{
@@ -105,7 +105,6 @@ body{
 //手機版客製調整
 @media (max-width:1023px){
   #header{
-    border-bottom: none;
     nav{
       position: absolute;
       top:70px;
@@ -113,8 +112,9 @@ body{
       left: 0;
       text-align: center;
       background: #f6f8fd;
+      border-bottom: 1px solid #cbd0d9;
     }
-    nav>ul>li>a{
+    ul>li>a{
       display: block;
       padding: 15px 0;
     }
