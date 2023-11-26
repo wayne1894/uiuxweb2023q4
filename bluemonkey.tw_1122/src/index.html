@@ -18,7 +18,7 @@
                 <a href="#" class="plan_btn mt-5 mb-5">查看方案</a>
             </div>
         </section>
-        <section class="bg-[#f6f8fd] w-full">
+        <section class="bg-[#f6f8fd] pb-6 w-full">
             <div class="max-w-[1300px] px-2 mx-auto text-center">
                 <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-0 py-8 md:py-10">
                     <div class="flex-1">
@@ -35,7 +35,7 @@
                     </div>
                  </div>
                  <!-- <div class="flex flex-wrap"></div>  //flex解決方案 -->
-                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                 <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     <%for(var i=0;i<6;i++){%>
                         <%- include('include/introduce', {
                             h3: "個性化介面",
@@ -44,6 +44,83 @@
                         }); %>
                     <%}%>
                  </div>
+            </div>
+        </section>
+        <section class="pt-10 pb-10 bg-[linear-gradient(9deg,#0493e3_18%,#28b2ee_54%)]">
+            <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center">
+                <h2 class="pb-10 text-[70px] text-white font-bold">資費方案彈性選擇</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <%for(var i=0;i<2;i++){%>
+                    <a class="" target="_blank" href="#">
+                        <h1 class="">月租熱門方案<span>月租一個獨立網校</span></h1>
+                        <div class="">
+                            <span class=""><b>NT$4,500元 /月</b></span>
+                            <div class="">
+                                <div class="">
+                                    享方案亮點：
+                                </div>
+                                - 🎉 首月試用特惠價988元<br>
+                                - 零抽成<br>
+                                - 開課數量無上限<br>
+                                - 設計版型自由選<br>
+                                - 串接自己的綠界收款<br>
+                                - 網址：<i><b>品牌名稱</b>.teacher.place</i>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="img/npriceb-p2.png" alt="">
+                        </div>
+                        <div class="">了解更多</div>
+                    </a>
+                    <%}%>
+                </div>
+            </div>
+        </section>
+        <section class="pt-10 pb-10 bg-[#1193e1]">
+            <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center">
+                <h2 class="pb-10 text-[70px] text-white font-bold">各品牌好評見證</h2>
+                <div class="customer_logo">
+                    <div uk-slider="autoplay: true;autoplay-interval:2000">
+                        <div class="uk-slider-items flex ">
+                            <%
+                            let adj= "w-[180px]"
+                            %>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/fenny.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/mike.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/no15.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/sunny.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/mbsr.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/4uad.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/myfastclass.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/369.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/wayne.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/sanyuan.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/matthew.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/lunde.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/ndt.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/craftman.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/accucrazy.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/jamie.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/nutri.png"></div>
+                            <div class="<%=adj%>"><img src="img/teacher-slide/acdc.png"></div>
+                        </div>
+                    </div>
+                <div uk-slider="autoplay: true;autoplay-interval:3000">
+                    <div class="uk-slider-items flex">
+                        <div class="basis-[14%]"><img src="img/teacher-slide/teacherv.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/uncle.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/kcmath.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/beeme.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/asen.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/ps.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/yuan.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/wound.png"></div>
+                        <div class="basis-[14%]"><img src="img/teacher-slide/senjans.png"></div>
+                    </div>
+                </div>
+            </div>
+
+
             </div>
         </section>
 
