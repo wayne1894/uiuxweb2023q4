@@ -12,13 +12,13 @@
     <%-include('include/header')%>
 
     <main class="pt-[70px]">
-        <section class="bg-[#1b96e1] w-full">
+        <section id="scroll_1" class="bg-[#1b96e1] w-full">
             <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center">
                 <img src="img/3bm-fb-share.jpg" alt="">
                 <a href="#" class="plan_btn mt-5 mb-5">查看方案</a>
             </div>
         </section>
-        <section class="bg-[#f6f8fd] pb-6 w-full">
+        <section id="scroll_2" class="bg-[#f6f8fd] pb-6 w-full">
             <div class="max-w-[1300px] px-2 mx-auto text-center">
                 <div class="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-0 py-8 md:py-10">
                     <div class="flex-1">
@@ -46,13 +46,13 @@
                  </div>
             </div>
         </section>
-        <section class="pt-10 pb-10 bg-[linear-gradient(9deg,#0493e3_18%,#28b2ee_54%)]">
+        <section id="scroll_3" class="pt-10 pb-10 bg-[linear-gradient(9deg,#0493e3_18%,#28b2ee_54%)]">
             <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center">
-                <h2 class="pb-10 text-[70px] text-white font-bold">資費方案彈性選擇</h2>
-                <div class="grid md:grid-cols-2 gap-8">
+                <h2 uk-scrollspy="cls:uk-animation-slide-top-medium;delay: 500;repeat: true" class="pb-10 text-[70px] text-white font-bold">資費方案彈性選擇</h2>
+                <div class="grid md:grid-cols-2 gap-8" uk-scrollspy="cls: uk-animation-fade; target: >a; delay: 500; repeat: true">
                     <%for(var i=0;i<2;i++){%>
-                    <a class="" target="_blank" href="#">
-                        <h1 class="">月租熱門方案<span>月租一個獨立網校</span></h1>
+                    <a target="_blank" href="#">
+                        <h1>月租熱門方案<span>月租一個獨立網校</span></h1>
                         <div class="">
                             <span class=""><b>NT$4,500元 /月</b></span>
                             <div class="">
@@ -76,8 +76,8 @@
                 </div>
             </div>
         </section>
-        <section class="pt-10 pb-10 bg-[#1193e1]">
-            <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center">
+        <section id="scroll_4" class="pt-10 pb-10 bg-[#1193e1]">
+            <div class="max-w-[1300px] px-4 md:px-8 mx-auto text-center uk-animation-toggle">
                 <h2 class="pb-10 text-[70px] text-white font-bold">各品牌好評見證</h2>
                 <div class="customer_logo">
                     <div uk-slider="autoplay: true;autoplay-interval:2000">
@@ -124,7 +124,12 @@
             </div>
         </section>
 
-
+    <div class="toggle-usage fixed right-3 bottom-[111px] w-11 h-10" >
+        <a href="#" uk-toggle="target: .toggle-usage">Toggle</a>
+        <a href="" uk-totop uk-scroll>置頁</a>
+        <a href="#scroll_2"  uk-scroll>某個元素</a>
+    </div>
+    <p class="toggle fixed right-2 bottom-[211px] w-11 h-10 toggle-usage"  uk-toggle="target: .toggle-usage" hidden>Bazinga!</p>
 
 
     </main>
