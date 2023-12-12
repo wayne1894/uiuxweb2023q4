@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>gsap_demo</title>
+    <link rel="stylesheet" href="scss/main.scss">
+  <style>
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      width: 300px;
+      height: 200px;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+
+    .active {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+<body>
+
+ <div class="carousel">
+  <div class="slides">
+    <div class="slide active">Slide 1</div>
+    <div class="slide">Slide 2</div>
+    <div class="slide">Slide 3</div>
+  </div>
+  <button class="prevBtn">Previous</button>
+  <button class="nextBtn">Next</button>
+</div>
+    
+    <script src="js/gsap.min.js"></script>
+<script>
+const slides = gsap.utils.toArray('.slide');
+const prevBtn = document.querySelector('.prevBtn');
+const nextBtn = document.querySelector('.nextBtn');
+let currentIndex = 0;
+
+function goToSlide(index) {
+  gsap.to('.slides', {
+    x: -index * 100 + '%',
+    duration: 0.5
+  });
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+  currentIndex = index;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+  goToSlide(currentIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  goToSlide(currentIndex);
+});
+  
+  </script>
+</body>
+</html>

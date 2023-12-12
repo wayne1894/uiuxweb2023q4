@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>gsap_demo</title>
+    <link rel="stylesheet" href="scss/main.scss">
+  <style>
+/*    https://polypane.app/css-3d-transform-examples/*/
+    
+    .machine-handle{
+      transform-origin: center left;
+/*      transform: scaleY(0.9)*/
+    }
+ 
+    
+/*
+    #demo{
+        transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+    }
+*/
+div.test {
+  width: 30vmin;
+  height: 25vmin;
+  transform:
+/*    perspective(500px)*/
+    rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+  box-shadow:
+    rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+    rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+  border-radius: 10px;
+  border: 1px solid;
+  border-color:
+    rgb(213, 220, 226)
+    rgb(213, 220, 226)
+    rgb(184, 194, 204);
+}
+  </style>
+</head>
+<body class="pt-20">
+    
+<div class="test ml-10">
+  <img src="https://openfans.cc/logo.png" alt="">
+</div>
+    
+<svg id="demo" version="1.1" id="machine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 644" style="enable-background:new 0 0 2560 644;" xml:space="preserve">
+      <path id="machine-body" style="fill:#033C57;" d="M1594.4,644H965.6c-4.2,0-7.6-3.4-7.6-7.6V7.6c0-4.2,3.4-7.6,7.6-7.6h628.7 c4.2,0,7.6,3.4,7.6,7.6v628.7C1602,640.6,1598.6,644,1594.4,644z"></path>
+      <path id="machine-interior-background" style="fill:#FFFFFF;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;" d="M1529.8,578 h-499.8c-3.3,0-6.1-2.7-6.1-6.1V72.1c0-3.3,2.7-6.1,6.1-6.1h499.8c3.3,0,6.1,2.7,6.1,6.1v499.8C1535.8,575.3,1533.1,578,1529.8,578z "></path>
+      <g id="machine-interior_1_">
+          <defs>
+              <path id="machine-interior-mask" d="M1524.9,573h-490.1c-3.3,0-6-2.7-6-6V77c0-3.3,2.7-6,6-6h490.1c3.3,0,6,2.7,6,6V567 C1530.8,570.3,1528.2,573,1524.9,573z"></path>
+          </defs>
+          <clipPath id="machine-interior-mask_1_">
+              <use xlink:href="#machine-interior-mask" style="overflow:visible;"></use>
+          </clipPath>
+          <g class="machine-icons" style="clip-path:url(#machine-interior-mask_1_);">
+              <g class="machine-sixth-icon" data-svg-origin="1150.699951171875 451.70001220703125" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                  <path style="fill:#61BACF;stroke:#033C57;stroke-width:7.4265;stroke-miterlimit:10;" d="M1404,516h-248.3c-2.7,0-5-2.2-5-5 v-54.3c0-2.7,2.2-5,5-5H1404c2.7,0,5,2.2,5,5V511C1409,513.7,1406.8,516,1404,516z"></path>
+                  <rect x="1154.4" y="455.4" style="fill:#FFFFFF;" width="250.7" height="4.1"></rect>
+              </g>
+              <g class="machine-fifth-icon" data-svg-origin="1150.699951171875 386.6000061035156" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                  <path style="fill:#61BACF;stroke:#033C57;stroke-width:7.4265;stroke-miterlimit:10;" d="M1404,450.9h-248.3c-2.7,0-5-2.2-5-5 v-54.3c0-2.7,2.2-5,5-5H1404c2.7,0,5,2.2,5,5v54.3C1409,448.7,1406.8,450.9,1404,450.9z"></path>
+                  <rect x="1154.4" y="390.4" style="fill:#FFFFFF;" width="250.7" height="4.1"></rect>
+              </g>
+              <g class="machine-fourth-icon" data-svg-origin="1150.699951171875 321.6000061035156" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                  <path style="fill:#61BACF;stroke:#033C57;stroke-width:7.4265;stroke-miterlimit:10;" d="M1404,385.9h-248.3c-2.7,0-5-2.2-5-5 v-54.3c0-2.7,2.2-5,5-5H1404c2.7,0,5,2.2,5,5v54.3C1409,383.7,1406.8,385.9,1404,385.9z"></path>
+                  <rect x="1154.4" y="325.3" style="fill:#FFFFFF;" width="250.7" height="4.1"></rect>
+              </g>
+              <g class="machine-third-icon" data-svg-origin="1150.699951171875 256.6000061035156" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                  <path style="fill:#61BACF;stroke:#033C57;stroke-width:7.4265;stroke-miterlimit:10;" d="M1404,320.9h-248.3c-2.7,0-5-2.2-5-5 v-54.3c0-2.7,2.2-5,5-5H1404c2.7,0,5,2.2,5,5v54.3C1409,318.6,1406.8,320.9,1404,320.9z"></path>
+                  <rect x="1154.4" y="260.3" style="fill:#FFFFFF;" width="250.7" height="4.1"></rect>
+              </g>
+              <g class="machine-second-icon" data-svg-origin="1150.699951171875 191.5" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                  <path style="fill:#61BACF;stroke:#033C57;stroke-width:7.4265;stroke-miterlimit:10;" d="M1404,255.8h-248.3c-2.7,0-5-2.2-5-5 v-54.3c0-2.7,2.2-5,5-5H1404c2.7,0,5,2.2,5,5v54.3C1409,253.6,1406.8,255.8,1404,255.8z"></path>
+                  <rect x="1154.4" y="195.3" style="fill:#FFFFFF;" width="250.7" height="4.1"></rect>
+              </g>
+              <g class="machine-first-icon" data-svg-origin="1150.699951171875 126.5" style="transform: translate(0%, -1.0919%) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+                  <path style="fill:#61BACF;stroke:#033C57;stroke-width:7.4265;stroke-miterlimit:10;" d="M1404,190.8h-248.3c-2.7,0-5-2.2-5-5 v-54.3c0-2.7,2.2-5,5-5H1404c2.7,0,5,2.2,5,5v54.3C1409,188.6,1406.8,190.8,1404,190.8z"></path>
+                  <rect x="1154.4" y="130.2" style="fill:#FFFFFF;" width="250.7" height="4.1"></rect>
+              </g>
+          </g>
+          <g class="machine-doors" style="clip-path:url(#machine-interior-mask_1_);">
+              <path class="machine-bottom-door" style="fill: rgb(3, 60, 87); stroke: rgb(255, 255, 255); stroke-width: 10; stroke-miterlimit: 10; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" d="M1469,275v94h-129 v-94h-130v94h-127v-94H958v361.4c0,4.2,3.4,7.6,7.6,7.6h628.7c4.2,0,7.6-3.4,7.6-7.6V275H1469z" data-svg-origin="958 275"></path>
+              <path class="machine-top-door" style="fill: rgb(3, 60, 87); stroke: rgb(255, 255, 255); stroke-width: 10; stroke-miterlimit: 10; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);" d="M1594.4,0H965.6 c-4.2,0-7.6,3.4-7.6,7.6V275h125v94h127v-94h130v94h129v-94h133V7.6C1602,3.4,1598.6,0,1594.4,0z" data-svg-origin="958 0"></path>
+          </g>
+      </g>
+      <path class="machine-handle-mount" style="fill:#033C57;" d="M1641.6,441.7h-39.5c-4.2,0-7.6-3.4-7.6-7.6V209.9c0-4.2,3.4-7.6,7.6-7.6 h39.5c4.2,0,7.6,3.4,7.6,7.6v224.2C1649.2,438.3,1645.8,441.7,1641.6,441.7z"></path>
+      <g class="machine-handle" data-svg-origin="1648.5999755859375 323.0500030517578">
+          <rect class="machine-handle-translateOrigin-helper" x="1648.6" y="117.7" style="opacity:0;fill: #f90000;" width="124.8" height="410.7"></rect>
+          <polyline class="machine-handle-lever" style="fill:none;stroke:#033C57;stroke-width:19.1079;stroke-miterlimit:10;" points=" 1648.6,323.1 1717.4,323.1 1746.7,144.5 "></polyline>
+          <g class="machine-handle-knob">
+              <circle style="fill:#033C57;" cx="1746.7" cy="144.5" r="26.8"></circle>
+              <path style="fill:#0D6182;" d="M1751.6,126.3c9.6,2.1,15.6,11.6,13.5,21.2c-2.1,9.6-11.6,15.6-21.2,13.5"></path>
+          </g>
+      </g>
+  </svg>
+    
+    
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
