@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
-    <meta charset="UTF-8"/>
-    <link rel="icon" href="/favicon.ico"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>webstart template (vite5 + tailwind3 + scss + ejs)</title>
-    <link rel="stylesheet" href="scss/main.scss">
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>來一課 最懂你的線上課程開課工具 - 藍猴數位探索BlueMonkey</title>
+  <link rel="stylesheet" href="scss/main.scss">
 </head>
+
 <body>
-    <h1 class="text-3xl font-bold underline text">
-        Hello world!
-      </h1>
-      <a href="index2.html">fff</a>
-    <%for(var i=0;i<3;i++){%>
-      <%-include("include/partial")%>
-    <%}%>
-    
+  <header class="flex bg-[#f6f8fd] h-[70px] items-center px-[55px]">
+    <a class="flex items-center gap-[10px]" href="#">
+      <img class="h-[32px]" src="img/logo-teaching.png" alt="">
+      <div class="logo_text">線上開課工具!</div>
+    </a>
+    <nav class="mx-auto">
+      <ul class="flex gap-[15px]">
+        <li><a class="hover:text-[#007cc1]" href="#">線上開課工具</a></li>
+        <li><a class="hover:text-[#007cc1]" href="#">功能特色</a></li>
+        <li><a class="hover:text-[#007cc1]" href="#">方案費用</a></li>
+        <li><a class="hover:text-[#007cc1]" href="#">客戶案例</a></li>
+        <li><a class="hover:text-[#007cc1]" href="#">關於我們</a></li>
+        <li><a class="hover:text-[#007cc1]" href="#">藍猴首頁</a></li>
+      </ul>
+    </nav>
+    <a class="header_btn" href="#">FREE! 開通試用</a>
+  </header>
 </body>
+
 </html>

@@ -3,3 +3,29 @@
 @tailwind utilities;
 
 @layer utilities {}
+
+.logo_text{
+    border: 1px solid #727272;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #727272;
+    padding: 2px 8px;
+    background-color: #fff;
+    &:hover{
+        background-color: burlywood;
+    }
+}
+.header_btn{
+    color: #333;
+    padding: 10px 20px;
+    border: 2px solid #f7b157;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-align: center;
+    border-radius: 50px;
+    &:hover{
+        background-color: aqua;
+        color: #fff;
+    }
+}
