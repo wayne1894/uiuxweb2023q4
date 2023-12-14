@@ -4,6 +4,10 @@
 
 @layer utilities {}
 
+.uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
+    text-decoration: none;
+}
+
 .logo_text{
     border: 1px solid #727272;
     font-size: 15px;
