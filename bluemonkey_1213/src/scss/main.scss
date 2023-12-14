@@ -33,3 +33,45 @@
         color: #fff;
     }
 }
+.plan_btn{
+    background-color: #ffdd3d;
+    padding: 10px 96px;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    border: 4px solid #fff;
+    letter-spacing: 0.5rem;
+    display: inline-block;
+    position: relative;
+    &:hover{
+        background-color: #ffec7f;
+        color: #000;
+    }
+    &::before{
+        content: "→";
+        position: absolute;
+        right: 10px;
+        top: 8px;
+    }
+}
+
+@media (min-width: 1024px){
+    #offcanvas-flip{
+       display: block;
+       position: static;
+       .uk-offcanvas-bar{
+          position: static;
+          width: auto;
+          padding: 0;
+          background: transparent;
+          .uk-offcanvas-close{
+            display: none;
+           }
+          a{
+            color: black;
+          }
+       }
+
+    }
+}

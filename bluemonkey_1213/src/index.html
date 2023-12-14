@@ -11,25 +11,17 @@
 </head>
 
 <body>
-  <header uk-nav class="flex bg-[#f6f8fd] h-[70px] items-center px-[20px] sm:px-[30px] md:px-[40px] lg:px-[55px]">
-    <a class="flex items-center gap-[10px]" href="#">
-      <img class="h-[32px]" src="img/logo-teaching.png" alt="">
-      <div class="logo_text">線上開課工具!</div>
-    </a>
-    <nav class="uk-parent mx-auto absolute top-[70px] w-full left-0 text-center lg:static lg:w-auto">
-      <a class="absolute top-[-40px] right-[22px]" href="#"><img class="lg:hidden" src="img/icon_bars.svg" alt=""></a>
-      <ul class="flex lg:!flex gap-[15px] flex-col lg:flex-row">
-        <li><a class="hover:text-[#007cc1] justify-center py-[10px]" href="#">線上開課工具</a></li>
-        <li><a class="hover:text-[#007cc1] justify-center py-[10px]" href="#">功能特色</a></li>
-        <li><a class="hover:text-[#007cc1] justify-center py-[10px]" href="#">方案費用</a></li>
-        <li><a class="hover:text-[#007cc1] justify-center py-[10px]" href="#">客戶案例</a></li>
-        <li><a class="hover:text-[#007cc1] justify-center py-[10px]" href="#">關於我們</a></li>
-        <li><a class="hover:text-[#007cc1] justify-center py-[10px]" href="#">藍猴首頁</a></li>
-      </ul>
-    </nav>
-   
-    <a class="hidden lg:block header_btn" href="#">FREE! 開通試用</a>
-  </header>
+  <%-include("include/headerV1.ejs")%>
+  <main>
+    <section class="bg-[#1b96e1]">
+      <div class="mx-auto max-w-[1300px] text-center pb-5">
+        <img src="https://firebasestorage.googleapis.com/v0/b/school-uiui.appspot.com/o/web%2F1685722143.png?alt=media&token=a4425def-93e7-46a5-a7ee-4f47dc8ddbe7" >
+        <a class="plan_btn" href="#">查看方案</a>
+      </div>
+    </section>
+    <section></section>
+    <section></section>
+  </main>
 
   <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
