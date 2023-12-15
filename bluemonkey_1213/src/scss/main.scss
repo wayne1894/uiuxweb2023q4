@@ -70,6 +70,73 @@
     z-index: -1;
   }
 }
+.input_group{
+    position: relative;
+    //.input_group.lock::before{
+    &.front_icon::before{
+        content: "";
+        width: 25px;
+        height: 25px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &.front_icon.lock::before{
+        background-image: url(https://cdn-icons-png.flaticon.com/512/2889/2889676.png);
+    }
+    &.front_icon.mail::before{
+        background-image: url(https://cdn-icons-png.flaticon.com/512/386/386220.png);
+    }
+    &.front_icon.abcd::before{
+        background-image: url(../favicon.ico);
+    }
+    input,textarea{
+        background-color: #f6f8fd;
+        border: 1px solid #000;
+        padding: 10px 24px;
+        width: 100%;
+        &:focus{
+            outline: none;
+            border: 1px solid #0693e3;
+            box-shadow: 0 0 0 1.5px #0693e3;
+            background-color: #fff;
+        }
+    }
+}
+.input_chose{
+    input{
+        display: none;
+    }
+    label{
+        padding: 10px 13px;
+        border-radius: 30px;
+        cursor: pointer;
+        &::before{
+            content: "";
+            display: inline-block;
+            width: 23px;
+            height: 23px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 2px solid #777;
+            vertical-align: middle;
+            margin-right: 5px;
+            position: relative;
+            top: -1px;
+        }
+    }
+    input:checked + label{
+        background-color: #dfdfdf;
+    }
+    input:checked + label::before{
+        border: 7px solid red;
+    }
+
+}
 
 @media (min-width: 1024px){
     #offcanvas-flip{

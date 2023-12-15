@@ -52,7 +52,71 @@
 
       </div>
     </section>
-    <section></section>
+    <section class="bg-[#1193e1]">
+      <div class="mx-auto max-w-[1500px] text-center pb-5 px-[20px]">
+         <h2 class="py-10 text-[25px] lg:text-[70px] text-white font-bold">各品牌好評見證</h2>
+         <div class="relative" uk-slider="autoplay: true;autoplay-interval: 2000">
+          <div class="uk-slider-items">
+            <div class="w-[150px] lg:w-[180px]"><img src="img/teacher-slide/369.png" alt=""></div>
+            <div class="w-[150px] lg:w-[180px]"><img src="img/teacher-slide/matthew.png" alt=""></div>
+            <div class="w-[150px] lg:w-[180px]"><img src="img/teacher-slide/no15.png" alt=""></div>
+            <%for(var i=0;i<20;i++){%>
+              <div class="w-[150px] lg:w-[180px]"><img loading="lazy" src="img/teacher-slide/acdc.png?id=<%=i%>" alt=""></div>
+              <div class="w-[150px] lg:w-[180px]"><img loading="lazy" src="img/teacher-slide/fenny.png?id=<%=i%>" alt=""></div>
+              <div class="w-[150px] lg:w-[180px]"><img loading="lazy" src="img/teacher-slide/mbsr.png?id=<%=i%>" alt=""></div>
+            <%}%>
+          </div>
+          <a class="text-[#fff] uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="text-[#fff] uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#f6f8fd]">
+      <div class="mx-auto max-w-[1000px] text-center py-[20px] px-[15px] lg:px[20px]">
+         <div class="shadow-md bg-white px-[20px] py-[30px]">
+          <div class="mb-5">
+            <h2>你的線上教學事業馬上啟動！</h2>
+            <p>歡迎加入 LINE，即時展開對話，或是填寫下方表單，我們將致電與您討論：）</p>
+          </div>
+          <div class="flex flex-col lg:flex-row">
+            <div class="basis-3/5">
+              <form class="flex flex-col gap-5" action="">
+                <div class="input_group front_icon lock">
+                  <input type="text" placeholder="*名字">
+                </div>
+                <div class="input_group front_icon mail">
+                  <input type="text" placeholder="*Email">
+                </div>
+                <div class="input_group front_icon abcd">
+                  <input type="text" placeholder="*聯絡電話">
+                </div>
+                <div class="flex">
+                    <div>我想了解：</div>
+                    <div class="input_chose">
+                      <input id="chose1" name="plan" type="radio">
+                      <label for="chose1">月租方案</label>
+                    </div>
+                    <div class="input_chose">
+                      <input id="chose2" name="plan" type="radio">
+                      <label for="chose2">企業方案</label>
+                    </div>
+                    <div class="input_chose">
+                      <input id="chose3" name="plan" type="radio">
+                      <label for="chose3">其他</label>
+                    </div>
+                </div>
+                <div class="input_group">
+                  <textarea name="" id="" cols="20" rows="5"  placeholder="您現況遇到的開課問題？我們會全力提供協助及建議！"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="basis-2/5 flex justify-center items-end">
+              <button>送出</button>
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
   </main>
 
   <!-- UIkit JS -->
