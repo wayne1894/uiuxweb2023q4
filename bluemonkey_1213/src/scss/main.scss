@@ -7,6 +7,9 @@
 .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
     text-decoration: none;
 }
+#header_ui .uk-active{
+    color: #1b96e0;
+}
 
 .logo_text{
     border: 1px solid #727272;
@@ -129,7 +132,7 @@
             top: -1px;
         }
     }
-    input:checked + label{
+    input:checked + label,input + label:hover{
         background-color: #dfdfdf;
     }
     input:checked + label::before{
@@ -137,6 +140,33 @@
     }
 
 }
+
+.zoom{
+    overflow: hidden;
+    position: relative;
+    transform: scale(1.01, 1.01);
+    .inner{
+      transition: transform .42s cubic-bezier(.15,.46,.57,1);
+      &::before {
+        content: "";
+        transition: opacity .42s cubic-bezier(.15,.46,.57,1);
+        opacity: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255,255,255,0.25);
+      }
+    }
+    &:hover .inner{
+      transform: scale(1.08, 1.08);
+      &::before{
+        opacity: 1;
+      }
+    }
+  }
+  
 
 @media (min-width: 1024px){
     #offcanvas-flip{
