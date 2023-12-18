@@ -4,9 +4,25 @@
 
 @layer utilities {}
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@200;600;800&display=swap');
+@font-face {
+	font-family: 'AbelRegular';
+    src: url('fonts/abel-regular-webfont.eot');
+    src: url('fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),  url('fonts/abel-regular-webfont.woff') format('woff'),  url('fonts/abel-regular-webfont.ttf') format('truetype'),  url('fonts/abel-regular-webfont.svg#AbelRegular') format('svg');
+}
+
 .uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover {
     text-decoration: none;
 }
+body{
+    font-family: 'Noto Sans TC','Microsoft JhengHei', sans-serif;
+    font-weight: 800;
+}
+.txtJL{
+    font-family: "AbelRegular" , sans-serif;
+    font-weight: normal;
+}
+
 #header_ui .uk-active a{
     color: #1b96e0;
 }
