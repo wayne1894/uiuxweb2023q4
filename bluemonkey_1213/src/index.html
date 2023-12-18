@@ -6,13 +6,14 @@
   <link rel="icon" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>來一課 最懂你的線上課程開課工具 - 藍猴數位探索BlueMonkey</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/css/uikit.min.css" />
   <link rel="stylesheet" href="scss/main.scss">
 </head>
+<%-include("include/ga.ejs")%>
 
 <body>
   <%-include("include/headerV1.ejs")%>
-  <main>
+  <main id="main" class="pt-[70px]">
     <section id="scroll_1" class="bg-[#1b96e1]">
       <div class="mx-auto max-w-[1300px] text-center pb-5">
         <img src="https://firebasestorage.googleapis.com/v0/b/school-uiui.appspot.com/o/web%2F1685722143.png?alt=media&token=a4425def-93e7-46a5-a7ee-4f47dc8ddbe7" >
@@ -140,11 +141,16 @@
          </div>
       </div>
     </section>
+
+    <div class="w-[100px] h-[100px] fixed right-0 bottom-0 bg-[red]">
+      <!-- <a href="" uk-totop uk-scroll>置頂</a>
+      <a href="#scroll_2" uk-scroll>移動到某個元素</a> -->
+    </div>
   </main>
 
   <!-- UIkit JS -->
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.15.10/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
