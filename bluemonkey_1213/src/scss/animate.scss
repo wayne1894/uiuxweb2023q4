@@ -3,7 +3,6 @@
 // https://wowjs.uk/docs.html
 // 以後需要，去上面這個網址裡面 copy 動畫元素
 
-
 @charset "UTF-8";/*!
  * animate.css - https://animate.style/
  * Version - 4.1.1
@@ -116,26 +115,32 @@
 }
 /* Attention seekers  */
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
 
-@-webkit-keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
   }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20%, 0);
   }
-  .animate__fadeIn {
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
+}
+.animate__fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
